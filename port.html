@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <title>Your Name - portfolio</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #71d6df;
+            color:rgb(3, 3,3);
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+
+        }
+        .header-conten h1{
+            font-size: 2.5rem;
+        }
+
+        .profile-picture {
+
+               width: 100px;
+               height: 100px;
+               border-radius: 70%;
+               object-fit:cover;
+               position:absolute;
+               top: px;
+               left: 67px;
+
+        }
+
+        nav{
+
+            background-color: #71d6df;
+            color: rgb(3, 3,3);
+            text-align: center;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0%;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(3,3,3);
+        }
+
+        .section-content{
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(243, 232, 232, 0.1);
+        }
+        .download-button{
+            border: #71d6df;
+            background-color: #71d6df;
+            color: rgb(3,3,3);
+            padding: 0.5rem 3rem;
+            text-decoration: none;
+            border-radius: 20px;
+             display: inline-block;
+            margin-top: 15px;
+        }
+
+        .download-button:hover {
+            background-color: #71d6df(233, 101, 121);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #71d6df ;
+            color: rgb(3, 3,3);
+        }
+
+        ul{
+            list-style-type: disc; 
+            padding-left: 20px;
+        }
+    </style>
+    </html>
+    <body>
+
+        <header>
+            <div class ="header-conten h1">
+                <img src="pic.jpeg"alt="Your profile picture"class="profile-picture">
+                <h1>Devi</h1>
+                <p> passionation on student</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#strengths">Strengths</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#resume">Resume
+                </a></li>
+                
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hello Everyone! This is Devi and i am B.Voc.,Software Development student</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <h3>Degree and Course</h3>
+                <hr>
+                <h3>B.voc.,Software Development</h3>
+                
+                <ul>
+                    <li>Arumugam Pillai Seethai Ammal College,Thirupathur</li>
+                </ul>
+                <h3>HSE +2</h3>
+                <ul>
+                    <li>Goverment higher Secondary School, Thirukkostur</li>
+                </ul>
+                <h3>SSLC</h3>
+                <ul>
+                    <li>Goverment higher Secondary School, Thirukkostur</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                <li>C and C++ Programming</li>
+                <li>Office Automation</li>
+                <li>Editing</li>
+                <li>HTML and CSS</li>
+                <li>Error Dedution</li>
+                </ul>
+            </div>
+        </section>
+        <section id="strengths">
+            <div class="section-content">
+                <h2>Strengths</h2>
+                <ul>
+                    <li>Self Motivater</li>
+                    <li>Psitive Thinking</li>
+                    <li>Self Confidence</li>
+                </ul>
+                </div>
+                </section>
+
+
+        <section id="project">
+            <div class="section-content">
+                <h2>Project</h2>
+                <ul>
+                    <li>Responsive Website - <a href="https://devimurugesan12345.github.io/hotel/" target="_blank">See here</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2> Resume</h2>
+                    <a href="Resume_M.Devi_Format1.pdf"class="download-button" target="_blank">Download CV</a>
+                </div>
+            </center>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Devi</p>
+        </footer>
+
+        <script>
+            document.querySelectorAll('a[herf^="#"]').forEach(anchor =>{
+                anchor.addEventListener('clik',function(e){
+                    e.preventDefault();
+                    const targetID = this.getAttribute('herf').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if(targetElement){
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }) ;
+            </script>
+    </body>
+</html>
